@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style rel="stylesheet">
+        body {
+            overflow: hidden;
+        }
+
+        body > img:first-child {
+            position: absolute;
+            bottom: 0;
+            height: 200px;
+            width: 500%;
+            animation: road 6s infinite linear;
+        }
+
+        body > img:nth-child(2) {
+            position: absolute;
+            bottom: 200px;
+            height: 300px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-repeat: repeat-x;
+            width: 200%;
+            animation: city 30s infinite linear;
+        }
+
+        body > img:nth-child(3) {
+            position: absolute;
+            width: 400px;
+            bottom: 100px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            animation: car 0.5s infinite linear;
+        }
+
+        body > img:nth-child(4) {
+            position: absolute;
+            width: 75px;
+            bottom: 102px;
+            right: 774px;
+            animation: wheels 1s infinite linear;
+        }
+
+        body > img:nth-child(5) {
+            position: absolute;
+            width: 75px;
+            bottom: 102px;
+            right: 529px;
+            animation: wheels 1s infinite linear;
+        }
+
+        @keyframes road {
+            100% {
+                transform: translateX(-2000px);
+            }
+        }
+
+        @keyframes city {
+            100% {
+                transform: translateX(-2000px);
+            }
+        }
+
+        @keyframes wheels {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes car {
+            100% {
+                transform: translateY(-1px);
+            }
+            50% {
+                transform: translateY(1px);
+            }
+            0% {
+                transform: translateY(-1px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<img src="images/road.jpg" alt="">
+<img src="images/city.png" alt="">
+<img src="images/car.png" alt="">
+<img src="images/wheel.png" alt="">
+<img src="images/wheel.png" alt="">
+</body>
+</html>

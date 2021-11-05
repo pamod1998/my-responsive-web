@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        body>section{
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+
+        }
+        body>section>section{
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            width: 500%;
+            height: 100%;
+            animation: myani 10s;
+
+        }
+        body>section>section>div{
+            width: 100%;
+            height: 100%;
+        }
+        body>section>section>div:nth-child(1){
+            background:url("images/cod1.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        body>section>section>div:nth-child(2){
+            background: url("images/cod2.jpg") center;
+            background-size: cover;
+        }
+        body>section>section>div:nth-child(3){
+            background:url("images/cod3.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        body>section>section>div:nth-child(4){
+            background:url("images/cod4.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        body>section>section>div:nth-child(5){
+            background:url("images/cod5.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        @keyframes myani {
+            0%{
+                transform: translateX(0);
+
+            }
+
+            25%{
+                transform: translateX(-20%);
+            }
+            50%{
+                transform: translateX(-40%);
+            }
+            75%{
+                transform: translateX(-60%);
+            }
+            100%{
+                transform: translateX(-80%);
+            }
+
+
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</section>
+</body>
+</html>
